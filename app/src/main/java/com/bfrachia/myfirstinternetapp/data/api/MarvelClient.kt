@@ -1,4 +1,4 @@
-package com.bfrachia.myfirstinternetapp
+package com.bfrachia.myfirstinternetapp.data.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

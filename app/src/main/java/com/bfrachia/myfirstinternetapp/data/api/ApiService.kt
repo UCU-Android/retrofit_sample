@@ -1,6 +1,6 @@
-package com.bfrachia.myfirstinternetapp
+package com.bfrachia.myfirstinternetapp.data.api
 
-import com.bfrachia.myfirstinternetapp.model.CharactersResponse
+import com.bfrachia.myfirstinternetapp.data.api.model.CharactersResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -8,11 +8,11 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("characters")
-    fun listCharacters(
+    suspend fun listCharacters(
         @Query("apikey") apiKey: String,
         @Query("orderBy") orderBy: String,
         @Query("ts") ts: String,
         @Query("hash") hash: String,
-    ): Call<CharactersResponse>
+    ): CharactersResponse
 
 }

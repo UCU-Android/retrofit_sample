@@ -1,4 +1,4 @@
-package com.bfrachia.myfirstinternetapp.model
+package com.bfrachia.myfirstinternetapp.data.api.model
 
 data class Result(
     val comics: Comics,

@@ -1,6 +1,6 @@
-package com.bfrachia.myfirstinternetapp.model
+package com.bfrachia.myfirstinternetapp.data.api.model
 
-data class Series(
+data class Events(
     val available: String,
     val collectionURI: String,
     val items: List<Item>,
